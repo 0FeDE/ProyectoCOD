@@ -1,0 +1,78 @@
+@mixin text($size,$interlineado,$color){
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
+    font-family: $font-family;
+}
+
+@mixin flex($dire,$justify,$align,$wrap){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+$paleta:(
+    'rojo': rgb(255, 0, 0),
+    'negro': rgb(0, 0, 0),
+    'azul': rgb(20, 43, 255),
+    'verde': #2ee40a,
+    'amarillo': rgb(212, 201, 42),
+    'gris':rgba(97, 99, 96, 0.7),
+    'blanco': white,
+    'p-a': dimgray,
+    'nav':#cecb39d2,
+);
+
+@for $i from 1 through 6{
+	.text-#{$i}{
+		font-size: .25em *$i;
+	}
+}
+
+@each $icono in facebook, twitter, instagram{
+	.#{$icono}-icon{
+		background-image:url(../img/#{$icono}.svg);
+		width: 30px;
+		height: 30px;
+		background-size:100%;
+		list-style: none;
+		margin-right: 6px;
+	}
+}
+
+@mixin medias($breakpoint){
+    @if $breakpoint == mobile{
+        @media (min-width:480px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet{
+        @media (min-width:600px){
+            @content;
+        }
+    }
+    @if $breakpoint == desktop{
+        @media (min-width:1200px){
+            @content;
+        }
+    }
+}
+
+.box{
+	width: ($width - 2%) / 4;
+	height: $height - 2vh;
+	background-color: grey;
+}
+
+.icon-lang{
+	width: 50px;
+	height: 50px;
+	background-size:contain;
+	background-position:center;
+	@if $lang==es{background-image: url(../img/icono-es.jpg)}
+	@else if $lang==en{background: url(../img/icono-en.jpg)}
+	@else if $lang==fr{background: url(../img/icono-fr.jpg)}
+	@else{background: url(../img/icono-any.jpg)};
+}

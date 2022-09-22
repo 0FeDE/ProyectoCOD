@@ -1,0 +1,47 @@
+@import"_mixin";
+$rojo: rgb(255, 0, 0);
+$negro: rgb(0, 0, 0);
+$azul: rgb(20, 43, 255);
+$verde: #2ee40a;
+$amarillo: rgb(212, 201, 42);
+$gris: rgba(97, 99, 96, 0.7);
+$blanco: white;
+$p-a:  dimgray;
+$nav:#cecb39d2;
+
+h1{
+    color: $rojo;
+}
+
+h2{
+    color: $negro;
+}
+
+h3{
+    color: $azul;
+}
+
+h4{
+    color: $amarillo;
+}
+
+.bg-amarillo{
+    background-color: map-get($map: $paleta, $key:'nav');
+}
+
+.bg-verde{
+    background-color: map-get($map: $paleta, $key:'verde')
+}
+
+.bg-gris{
+    background-color: map-get($map: $paleta, $key:'gris')
+}
+
+.bg-azul{
+    background-color: map-get($map: $paleta, $key:'azul')
+}
+
+p,a{
+    @include text(2em,2.2em,dimgray)
+}
+

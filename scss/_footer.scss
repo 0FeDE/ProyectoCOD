@@ -1,0 +1,25 @@
+.pie{
+	padding:30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    a{
+        text-decoration: none;
+    }
+    .pie__icon--sm{
+        width: 30px;
+    }
+    .pie__titulo--md{
+        font-size: $h4;
+        text-align: center;
+    }
+}
+
+.pie__marco{
+    width: 95%;   
+    height: auto;
+    margin: 50px auto;
+    padding: 20px 40px;
+    border: outset $amarillo 15px;
+    overflow: auto;
+}
