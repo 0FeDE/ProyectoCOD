@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
+h1, h2, h3, h4, h5 {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+.text-1 {
+  font-size: 0.25em;
+}
+
+.text-2 {
+  font-size: 0.5em;
+}
+
+.text-3 {
+  font-size: 0.75em;
+}
+
+.text-4 {
+  font-size: 1em;
+}
+
+.text-5 {
+  font-size: 1.25em;
+}
+
+.text-6 {
+  font-size: 1.5em;
+}
+
+.facebook-icon {
+  background-image: url(../img/facebook.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.twitter-icon {
+  background-image: url(../img/twitter.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.instagram-icon {
+  background-image: url(../img/instagram.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  color: rgb(20, 43, 255);
+}
+
+h4 {
+  color: rgb(212, 201, 42);
+}
+
+.bg-amarillo {
+  background-color: rgba(206, 203, 57, 0.8235294118);
+}
+
+.bg-verde {
+  background-color: #2ee40a;
+}
+
+.bg-gris {
+  background-color: rgba(97, 99, 96, 0.7);
+}
+
+.bg-azul {
+  background-color: rgb(20, 43, 255);
+}
+
+p, a {
+  font-size: 2em;
+  line-height: 2.2em;
+  color: dimgray;
+  font-family: "Merriweather", serif;
+}
+ 
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .element-hidden {
+    display: none;
+  }
+  
+  .plan-name, .plan-price, .plan-details, .button, .more-options, .best-choice {
+    padding: 10px;
+  }
+  
+  .plans {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+  .plans .plan-box {
+    display: flex;
+    width: 33.3333%;
+    background: #FFFCEF;
+    margin: 10px 0;
+    min-height: 650px;
+  }
+  .plans .plan-box .best-choice {
+    background: #D5FFFC;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #437299;
+    box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.15);
+    margin-top: auto;
+  }
+  .plans .plan-box:hover {
+    margin-top: -15px;
+    background: white;
+  }
+  @media all and (max-width: 700px) {
+    .plans .plan-box:hover {
+      margin-top: 10px;
+    }
+  }
+  .plans .plan-box:hover .plan-name {
+    color: black;
+  }
+  .plans .plan-box:hover .plan-price {
+    background: #be1100;
+    box-shadow: inset 0 -4px 3px rgba(0, 0, 0, 0.15), inset 0 4px 3px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  .plans .plan-box:hover .more-options {
+    display: block;
+    padding: 20px;
+    text-align: right;
+    position: relative;
+  }
+  .plans .plan-box:hover .more-options .additional-options {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  .plans .plan-box:hover .more-options a {
+    color: #9E2B20;
+    text-decoration: none;
+  }
+  @media all and (max-width: 700px) {
+    .plans .plan-box:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  .plans .plan-box:nth-child(2) {
+    margin-top: 0;
+    box-shadow: -3px 0 3px rgba(0, 0, 0, 0.15), 3px 0 3px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  .plans .plan-box:nth-child(2):hover {
+    margin-top: -35px;
+  }
+  @media all and (max-width: 700px) {
+    .plans .plan-box:nth-child(2):hover {
+      margin-top: 0px;
+      marign-right: -30px;
+    }
+  }
+  @media all and (max-width: 700px) {
+    .plans .plan-box {
+      width: 100%;
+    }
+  }
+  .plans .plan-name {
+    font: 300 32px Oswald, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  .plans .plan-price {
+    background: rgb(20, 43, 255);
+    color: white;
+    display: flex;
+    font: 24px Oswald, Arial, Helvetica, sans-serif;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .plans .plan-price strong {
+    font-size: 34px;
+    align-self: baseline;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .plans .plan-options {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  .plans .plan-options li {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  .plans .plan-options .button {
+    margin-top: auto;
+    display: block;
+    background: #2ee40a;
+    color: white;
+    text-align: center;
+    font: 24px Oswald, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  .plans .plan-options .button:hover {
+    background: #ed380f;
+  }
