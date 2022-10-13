@@ -1,89 +1,213 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta name="keywords" content="call of dutty,juegos,gammer,consolas">
+    <meta name="author" content="FeDE">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Call of Duty es una serie de videojuegos de disparos en primera persona, de estilo bélico, desarrollada principal e inicialmente por Infinity Ward, Treyarch, Sledgehammer Games y en menor proporción Raven Software y distribuida por Activision.">
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
+    <!-- ccs -->
+    <link rel="stylesheet" href="css/stylesCss.css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">     -->
+    <link rel="stylesheet" type="text/css" href="css/precio.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fresco.css"/>
+    <title>Call of Dutty</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="bg-verde py-2 text-center">
+        <h4 class="anuncio animated jello">Bienvenidos a Call of Dutty</h4>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-amarillo  sticky-top" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo inicio.webp" alt="logo de inicio" class="transform">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active li" aria-current="page" href="Noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Black_Ops_Cold_War.html">Cold-War</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Vanguard.html">Vanguard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Warzone.html">Warzone</a>
+              </li>  
+            </ul>
+    
+              <form class="btn">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide nav__fon" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <center><img src="img/header/Header inicio3.webp" class="w-75 p-3" alt="encabezado del call of dutty"></center>
+          </div>
+          <div class="carousel-item">
+            <center><img src="img/header/Header inicio2.webp" class="w-75 p-3" alt="encabezado del call of dutty"></center>
+          </div>
+          <div class="carousel-item">
+            <center><img src="img/header/Header inicio4.webp" class="w-75 p-3" alt="encabezado del call of dutty"></center>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <main class="py-3">
+        <div class="container-fluid">
+
+            <section class="bg-verde titulo">
+                <h1 class="titulo--xxl">Compra momentos inolvidables</h1>
+            </section>
+
+            <div id="encabezado" class="row">
+                <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card precio">
+                        <img src="img/precio/Black Ops Cold War precio.webp" class="card-img-top w-100" alt="Black Ops Cold War">
+                        <div class="card-body">
+                          <h4 class="card-title">Black Ops Cold War</h4>
+                          <p class="card-text">Black Ops Cold War es un videojuego desarrollado por Treyarch y Raven, publicado por Activision. Es la quinta entrega Black Ops y el decimoséptimo Call of Duty. Cronológicamente el juego está ambientado después de los acontecimientos de Black Ops.</p>
+                          <a href="https://us.shop.battle.net/es-es/family/call-of-duty-black-ops-cold-war" class="btn bg-azul w-100"><h4>Comprar</h4></a>
+                        </div>
+                      </div>
+                </article>               
+                <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card precio">
+                        <img src="img/precio/vanguard precio.webp" class="card-img-top w-100" alt="Vanguard">
+                        <div class="card-body">
+                          <h4 class="card-title">Vanguard</h4>
+                          <p class="card-text">La saga de Call of Duty® vuelve con Call of Duty®: Vanguard, donde los jugadores experimentarán influyentes batallas de la Segunda Guerra Mundial mientras luchan por la victoria en los frentes oriental y occidental de Europa, el Pacífico y el Norte de África.</p>
+                          <a href="https://us.shop.battle.net/es-es/product/call-of-duty-vanguard?p=166223" class="btn bg-azul w-100"><h4>Comprar</h4></a>
+                        </div>
+                      </div>
+                </article>
+                <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card precio">
+                        <img src="img/precio/warzone precio.webp" class="card-img-top w-100" alt="Warzone">
+                        <div class="card-body">
+                          <h4 class="card-title">Warzone</h4>
+                          <p class="card-text">Warzone permite el combate a gran escala en línea entre 150 jugadores, aunque algunos modos de juego por tiempo limitado admiten 200 jugadores. El juego presenta una multiplataforma como una progresión multiplataforma entre tres juegos.</p>
+                          <a href="https://us.shop.battle.net/es-es/family/call-of-duty-warzone" class="btn bg-azul w-100"><h4>Comprar</h4></a>
+                        </div>
+                      </div>
+                </article>
+                <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card precio">
+                        <img src="img/precio/Modern Warfare II precio.webp" class="card-img-top w-100" alt="Warzone">
+                        <div class="card-body">
+                          <h4 class="card-title">Moder Warfare II</h4>
+                          <p class="card-text">Modern Warfare es una sub-serie de la saga Call of Duty. Modern Warfare fue creado por Infinity Ward, y actualmente consta de cuatro juegos, Call of Duty 4: Modern Warfare, Call of Duty: Modern Warfare 2, Call of Duty: Modern Warfare 3 y Modern Warfare</p>
+                          <a href="https://us.shop.battle.net/es-es/family/call-of-duty-mw2cr" class="btn bg-azul w-100"><h4>Comprar</h4></a>
+                        </div>
+                      </div>
+                </article>
+            </div>
+            <section class="py-3">
+                <div class="container-fluid">
+                    
+                    <h3 class="titulo--xxl">Contactanos</h3>
+                    
+                    <div class="row">
+                        <article class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label contacto">Correo</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label contacto">Comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <button type="submit" class="btn bg-azul"><h4>Enviar</h4></button>
+                              </div>
+                        </article>
+                        <article class="col-sm-12 col-md-12 col-lg-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.863951091947!2d-67.53573308440511!3d-45.87403144419195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454d1ec25069d%3A0xb8f11b7a49840aad!2sCnel.%20Jose%20V%20de%20Gral.%20Olavarr%C3%ADa%201150%2C%20U9003EXX%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1659716768931!5m2!1ses-419!2sar" width="430" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 img-thumbnail"></iframe>
+                        </article>     
+                    </div>
+               </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="bg-verde pie__marco">
+      <h4 class="test-center">Seguinos en nuestras redes</h4>
+    </section>
+
+    <footer>
+      <div class="container__footer nav">
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="img/logo-magtimus.png" alt="logo warzonero">
+              </div>
+              <div class="terms">
+                  <p>TOP WARZONEROS. Si te gusto algo aparte de Warzone no dudes en comentaros</p>
+              </div>
+          </div>
+          <div class="box__footer">
+              <h2>Compañia</h2>
+              <a href="#">Acerca de</a>
+              <a href="#">Trabajos</a>
+              <a href="#">Procesos</a>
+              <a href="#">Servicios</a>              
+          </div>
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+              <a href="https://twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+              <a href="https://ar.linkedin.com"><i class="fab fa-linkedin"></i> Linkedin</a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a>
+          </div>
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados © 2022 <b>WARZONEROS</b></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/fresco.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
   </body>
+
 </html>
