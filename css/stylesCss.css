@@ -302,6 +302,11 @@ img.derecha {
   color: rgb(255, 0, 0);
 }
 
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav__fon{
   background-color: #2ee40a;
   width: 100%;
