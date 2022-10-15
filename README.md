@@ -1,11 +1,14 @@
                                   BIENVENIDOS a ProyectoCOD
                                         
 INTRODUCCION
+
 Mi proyecto trata soble el famoso juego de CALL OF DUTY. En el cual presento sus tres versiones mas relevantes a la fecha
 En el mismo vamos a poder ver sus obsiones de compra para distintas consolas; una galeria de imagenes; cuenta con una seccion 
 para cada version donde vamos a poder ver un poco de su contenido mas detallado.
 
+
 DESCRIPCION DE LA PAGUINA
+
 *INDEX: En esta paguina de inicio se puede ver una presentacion de las versiones del juego. Cuenta con unos enlaces a la paguina ofical para la compra
 del mismo en su version PC. 
 Tambien se agrego la seccion de contactos y ubicacion.
