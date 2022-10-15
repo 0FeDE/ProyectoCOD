@@ -1,4 +1,4 @@
-                                                  BIENVENIDOS a ProyectoCOD
+                                  BIENVENIDOS a ProyectoCOD
                                         
 INTRODUCCION
 Mi proyecto trata soble el famoso juego de CALL OF DUTY. En el cual presento sus tres versiones mas relevantes a la fecha
